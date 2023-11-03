@@ -1,0 +1,333 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="asset/css/bootstrap.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    
+    <title>SecureSpace</title>
+  </head>
+  <body>
+    <div class="container mt-5" id="invoice">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12" align="right">
+                <button class="btn btn-primary" id="download">Download invoice</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2" ></div>
+             <div class="col-lg-8 col-md-8 col-sm-8" >
+               <p style="font-size:30px;font-weight: 1500px;" class="fw-bold"><img src="asset/images/logo.png"  width="100" height="100" > Secure Space Projects 
+               </p>
+               <br>
+               <p style="font-size:15px;font-weight: 400px;margin-top:-2rem ;">Mosquito Screens| Invisible Grills| Zip Screens| Aluminum Window</p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2" ></div>
+             
+        </div>
+
+        <hr>
+        <div class="row">
+              
+            <div class="col-12">
+                <h1>INVOICE</h1>
+                <br>
+                <p>Invoice No. : <input type="text" class="invoice-no" placeholder="Enter your invoice no."></p>
+                <p>Due Date : <input type="date" class="due-date"></p>
+            </div>
+           
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <h4>Invoice To</h4>
+                <h5><textarea class="input-md" placeholder="Enter Customer's Name Here"></textarea></h5>
+                <p><textarea placeholder="Enter Customer's address here"></textarea></p>
+                <p><textarea placeholder="Enter Customer's phone number here"></textarea></p>
+                <p><textarea placeholder="Enter Site"></textarea></p>
+            </div>
+            <div class="col-6">
+                <h4>Invoice From</h4>
+                     <h5>The Secure Space</h5>
+
+                      <p>Aikya Vihar, opp. Madhapur, Kavuri Hills, Hyderabad, Telangana 500081
+                      </p>
+                      <p>+91 86392 07911 | +91 83285 26596 </p>
+                       
+                      <p>contact@thesecurespace.in </p>
+                       
+                      <p>www.thesecurespace.in </p>
+
+                   
+
+                </p>
+            </div>
+        </div>
+
+          
+        <hr>
+        
+        <div class="" >
+            <table class="table product_table" >
+                <thead>
+                    <tr>
+                        <th scope="col">Location</th>
+                        <th scope="col">Product Description</th>
+                        <th scope="col">Width</th>
+                        <th scope="col">Height</th>
+                        <th scope="col">Sft</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Cost</th>
+                        <th scope="col">Placement</th>
+                        <th scope="col">Total</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="duplicate_me">
+                        <td><input placeholder="location" class="product_location"></td>
+                        <td><textarea placeholder="Enter Product Description" class="product_name" ></textarea></td>
+                        <td><input placeholder="width" class="product_width"></td>
+                        <td><input placeholder="height" class="product_height"></td>
+                        <td><input placeholder="sft" class="product_sft"></td>
+                        <td><input placeholder="product qty" max="100" class="product_qty"></td>
+                        <td><input placeholder="price" class="unit_price"></td>
+                        <td><input placeholder="placement" class="product_placement"></td>
+                        <td><input placeholder="total" class="sub_total"></td>   
+                        <td><button class="btn btn-primary item_add">+</button></td>
+                        <td><button class="btn btn-primary item_remove">-</button></td> 
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+
+
+
+       
+
+        <div class="container row ">
+
+              
+
+                <!--  total cost-->
+            <div class="col-sm-12 col-lg-12 col-md-12">
+
+                 
+                   <div class="row">
+
+
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <p style="text-align: center;">total:</p>
+                            </div>
+                        
+
+                               <div class="col-sm-1 col-md-1 col-lg-1"></div>
+
+
+                               <div class="col-sm-1 col-md-1 col-lg-1"></div>
+                              
+                            
+
+                               <div class="col-sm-1 col-md-1 col-lg-1"></div>
+
+                                    
+                               <div class="col-sm-1 col-md-1 col-lg-1"></div>
+
+
+                               <div class="col-sm-2 col-md-2 col-lg-2">
+
+                                     <input type="number" class="total-sub-total" disabled>
+
+                               </div>
+
+                    </div>
+
+
+
+            </div>
+
+           <hr>
+
+              <!--  Installation cost-->
+            <div class="col-sm-12 col-lg-12 col-md-12">
+
+
+                   <div class="row">
+
+
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <p style="text-align: center;">Installation:</p>
+                            </div>
+                        
+
+                               <div class="col-sm-1 col-md-1 col-lg-1">
+
+                                    <input type="number" class="sft" disabled style="width:60px;" >
+
+                               </div>
+
+
+                              <div class="col-sm-1 col-md-1 col-lg-1"></div>
+                              
+                            
+
+                               <div class="col-sm-1 col-md-1 col-lg-1">
+
+                                    <input type="number" class="installation_cost"  placeholder="cost" style="width:60px;margin-left:-25px;">
+
+                               </div>
+
+                               <div class="col-sm-1 col-md-1 col-lg-1"></div>
+
+
+                               <div class="col-sm-2 col-md-2 col-lg-2">
+
+                                     <input type="number" class="installation_cost-show" disabled style="width:120px;" disabled>
+
+                               </div>
+
+                    </div>
+
+
+
+            </div>
+
+             <br>
+             <hr>
+
+
+              <!--  Transport cost-->
+            <div class="col-sm-12 col-lg-12 col-md-12">
+
+
+                   <div class="row">
+
+
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <p style="text-align: center;">Transport:</p>
+                            </div>
+                        
+
+                               <div class="col-sm-1 col-md-1 col-lg-1">
+
+                                   
+
+                               </div>
+
+
+                              <div class="col-sm-1 col-md-1 col-lg-1"></div>
+                              
+                            
+
+                               <div class="col-sm-1 col-md-1 col-lg-1">
+
+                                    
+
+                               </div>
+
+                               <div class="col-sm-1 col-md-1 col-lg-1"></div>
+
+
+                               <div class="col-sm-2 col-md-2 col-lg-2">
+
+                                     <input type="number" class="transport_cost"  placeholder="Enter Cost" style="width:120px;" >
+
+                               </div>
+
+                    </div>
+
+
+
+            </div>
+
+             <br>
+
+               <hr>
+
+
+                <!--  FinalPrice cost-->
+            <div class="col-sm-12 col-lg-12 col-md-12">
+
+
+                   <div class="row">
+
+
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <p style="text-align: center;">FinalPrice:</p>
+                            </div>
+                        
+
+                               <div class="col-sm-1 col-md-1 col-lg-1"></div>
+
+                                   
+                              <div class="col-sm-1 col-md-1 col-lg-1"></div>
+                              
+                            
+
+                               <div class="col-sm-1 col-md-1 col-lg-1"></div>
+
+                                
+
+                               <div class="col-sm-1 col-md-1 col-lg-1"></div>
+
+
+                               <div class="col-sm-2 col-md-2 col-lg-2">
+
+                                    <input type="number" class="total" min="0" required>
+
+                               </div>
+
+                    </div>
+
+
+
+            </div>
+
+            
+
+           <br>
+
+            
+            
+        </div>
+
+
+
+
+             <!-- Terms and conditions -->
+
+        <div class="container row " style="margin-top: 50px;">
+
+            <div class="col-12">
+              
+              <h4><u>Terms & Conditions</u></h4> 
+
+                <h6>Installation depends on Site availability.</h6>
+
+                <p>1. Delivery of material will be done within 4 Working days from the date of Advance/ Confirmation.</p>
+                <p>2. All goods remain as property of "Secure Space Projects" until FULL payment is received.</p>
+                <p>3. Kindly acknowledge the warranty period post installation aswe need to activate it on our system.</p>
+                <p>4. Any application under  warranty is limited to the repairing or replacement of any part, which proves to be defected within the warranty</p>
+                <p>5. Number of days ofworks are based on estimation only; no compensation of anyforms will be entertained</p>
+                <p>6. Invisible grille strength will depend on site condition.</p>
+            </div>
+            
+        </div>
+
+        
+    </div>  
+
+    <script src="asset/js/bootstrap.js"></script>
+    <script src="asset/js/jquery.js"></script>
+    <script src="asset/js/script.js"></script>
+  </body>
+</html>

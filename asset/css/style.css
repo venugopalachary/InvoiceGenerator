@@ -1,0 +1,56 @@
+@media print {
+    @page {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+input{
+    border: None;
+}
+
+table td {
+    position: relative;
+  }
+  
+table td input {
+    position: absolute;
+    display: block;
+    top:0;
+    left:0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+textarea{
+    border: none;
+}
+.image{
+    height: 150px;
+    width: 150px;
+    /* align: right; */
+}
+
+hr{ border: 5px solid blue; }
+
+.invoice_number_div{
+    text-align: right;
+}
+
+#preview_image { 
+    height: 150px;
+    width: 150px; 
+} 
+
+.company-name, .company-address, .phone-number {
+    margin-top: 6px;
+}
+
+.calculation {
+    margin: auto;
+    max-width: 9rem;
+}
